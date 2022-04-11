@@ -44,13 +44,13 @@ const HeaderComponent = () => {
                             href={`https://etherscan.io/address/${account}`}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="px-4 py-2 bg-yellow-500 hover:bg-yellow-300 rounded-full">
+                            className="px-6 py-2 bg-yellow-500 hover:bg-yellow-300 rounded">
                             {account.slice(0, 5) + '...' + account.slice(38, 42)}
                         </a>
                         <button className="text-xs text-right hover:text-yellow-500" onClick={() => delAccount()}>Disconnect</button>
                     </div>
                 ) : (
-                    <button className="px-4 py-2 bg-yellow-500 hover:bg-yellow-300 rounded-full" onClick={() => connectWallet()}>Connect Wallet</button>
+                    <button className="px-6 py-2 bg-yellow-500 hover:bg-yellow-300 rounded" onClick={() => connectWallet()}>Connect Wallet</button>
                 )}
             </div>
 
