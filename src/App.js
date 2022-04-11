@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import HeaderComponent from "./components/Header";
+import Presale from "./components/Presale";
+import ShapeDivider from "./components/ShapeDivider";
+import FooterComponent from './components/Footer';
+import { useContext, useEffect } from "react";
+import { GlobalProvider } from "./context/GlobalContext";
 
 function App() {
+  useEffect(() => {
+    if (!window.ethereum) {
+      alert('Please install MetaMask');
+    }
+
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalProvider>
+      <div className="container mx-auto px-10 max-w-7xl">
+        <div className="min-h-screen">
+          <HeaderComponent />
+          <ShapeDivider />
+          <Presale />
+        </div>
+      </div>
+      <FooterComponent />
+    </GlobalProvider>
   );
 }
 
