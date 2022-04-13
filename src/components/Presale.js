@@ -82,7 +82,7 @@ function Presale() {
         <div className="my-11 p-7 flex items-center flex-col md:flex-row justify-between border border-white border-opacity-20 rounded-3xl shadow-xl ">
             <div className="md:pl-8 text-center md:text-left md:mr-2">
                 <h1 className="text-base sm:text-xl font-bold uppercase" >Initial Coin Offering</h1>
-                <h1 className="text-2xl sm:text-4xl font-bold uppercase text-yellow-500" >Binance Smartchain King Token</h1>
+                <h1 className="text-2xl sm:text-4xl font-bold uppercase text-yellow-500" >Ride of Gamers Token</h1>
                 <button className='mt-5 px-6 py-2 bg-yellow-500 text-white rounded font-semibold' onClick={() => addToken()}>Add Token to your MetaMask</button>
                 {/* <div className='mt-3 hidden md:block'>
                 <p className="text-lg">For Progress, Investment & Success</p>

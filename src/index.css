@@ -3,9 +3,11 @@
 @tailwind utilities;
 
 body {
-    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(79,47,1,1) 52%, rgba(255,145,0,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(79,47,1,1) 52%, rgba(255,145,0,1) 100%);
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(79,47,1,1) 52%, rgba(255,145,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ff9100",GradientType=1);
     color: white;
 }
 

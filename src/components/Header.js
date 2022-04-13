@@ -2,7 +2,7 @@ import { ethers } from "ethers";
 import { useContext, useEffect } from "react";
 import Web3Modal from 'web3modal';
 import { GlobalContext } from "../context/GlobalContext";
-import logo from './../assets/BSK_LOGO.png';
+import logo from './../assets/rog_token.png';
 
 
 const HeaderComponent = () => {
