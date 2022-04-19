@@ -5,6 +5,7 @@ import { GlobalContext } from '../context/GlobalContext';
 
 import CROWDSALE_ABI from './../abi/abi.json';
 const crowdsaleAddress = "0x804Bb060DD3f87f8d1A3c451Cf89b6A995adE2D7";
+
 function Presale() {
     const { account } = useContext(GlobalContext);
     const [loading, setLoading] = useState(false);
